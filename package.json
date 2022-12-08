@@ -6,8 +6,18 @@
   "scripts": {
     "build": "tsc",
     "start": "yarn build && node dist/src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./src ./test --ext .ts",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+@https://github.com/codekoller/node-typescript-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codekoller/node-typescript-api/issues"
+  },
+  "homepage": "https://github.com/codekoller/node-typescript-api#readme",
   "keywords": [
     "nodejs",
     "typescript",
@@ -18,7 +28,10 @@
   "devDependencies": {
     "@types/module-alias": "^2.0.1",
     "@types/node": "16",
-    "typescript": "^4.5.4"
+    "@typescript-eslint/eslint-plugin": "3.2.0",
+    "@typescript-eslint/parser": "3.2.0",
+    "eslint": "7.2.0",
+    "typescript": "^3.8.3"
   },
   "dependencies": {
     "module-alias": "^2.2.2"
