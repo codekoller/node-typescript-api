@@ -1,0 +1,16 @@
+{
+  "name": "typescript-api",
+  "version": "1.0.0",
+  "description": "Nodejs TypeScript API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "api"
+  ],
+  "author": "William Koller",
+  "license": "ISC"
+}
